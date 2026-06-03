@@ -12,6 +12,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from task_data import tasks, employees, calculate_cost_function
 
+np.random.seed(28)
+random.seed(28)
+
 # Generate a chromosome through randomly selecting employee numbers
 def generate_chromosome(num_tasks, num_employees):    
     # chromosome is an 1D array of 10 valid task-assignments
